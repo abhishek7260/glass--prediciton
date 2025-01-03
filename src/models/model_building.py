@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 
 
-train_data=pd.read_csv("E:\\glass quality prediction\\data\\processed\\processed_train.csv")
+train_data=pd.read_csv("E:\\glass quality prediction\\data\\processed\\processed_train_zscore.csv")
 x_train=train_data.drop('Type',axis=1)
 y_train=train_data['Type']
 encoder=LabelEncoder()

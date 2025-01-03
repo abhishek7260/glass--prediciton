@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score
 from sklearn.ensemble import RandomForestClassifier
 
 # Load test data
-test_data = pd.read_csv("./data/processed/processed_test.csv")
+test_data = pd.read_csv("./data/processed/processed_test_zcore.csv")
 
 # Load the pre-trained model
 model = pickle.load(open("results/model.pkl", "rb"))
